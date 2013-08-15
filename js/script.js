@@ -93,20 +93,6 @@ $(function() {
 		$.getScript('//static.ak.fbcdn.net/connect.php/js/FB.Share');
 		$.getScript('//platform.twitter.com/widgets.js');
 
-		// add open/close buttons to each post
-		$('#timeline .item.post').each(function(){
-			$(this).find('.inner').append('<a href="#" class="open-close"></a>');
-		});
-
-		$('#timeline .item a.open-close').click(function(e){
-			$(this).siblings('.body').slideToggle(function(){
-				$('#timeline').isotope('reLayout');
-			});
-			$(this).parents('.post').toggleClass('closed');
-			$('#expand-collapse-buttons a').removeClass('active');
-			e.preventDefault();
-		});
-
 		$('#timeline .post .share').hover(
 			function(){
 				$(this).find('.share-trigger').addClass('over');
