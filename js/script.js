@@ -1,7 +1,7 @@
 // Script variables
 var timelineConfig = {
-	key: '0AsmHVq28GtVJdG1fX3dsQlZrY18zTVA2ZG8wTXdtNHc',
-	sheetName: 'Posts' // change to name of spreadsheet 'sheet' that contains the data
+	key: '0ApTTgpc7dScadFhLTkhMalhNbU1XbTR0MU5hNThUNHc',
+	sheetName: 'Timeline' // change to name of spreadsheet 'sheet' that contains the data
 }
  
 
