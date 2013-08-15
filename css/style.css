@@ -70,6 +70,7 @@ td { vertical-align: top; }
 ***********************************************************************************************************************/
 body{
 	text-align: center;
+	background:#eee;
 }
 #page{
 	width: 600px;
@@ -107,16 +108,13 @@ body{
 	position: relative;
 	width: 247px;
 	padding: 11px;
-	border: 1px #adadad solid;
 	background-color:#fff;
 	min-height:37px;
 	word-wrap:break-word;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
-	-webkit-box-shadow:  0px 1px 1px 0px #adadad;
-	-moz-box-shadow:  0px 1px 1px 0px #adadad;
-	box-shadow:  0px 1px 1px 0px #adadad;
+	box-shadow:0 5px 10px rgba(0,0,0,.15);
 }
 #timeline .post.right{
 	float: right;
@@ -258,13 +256,13 @@ body{
 	width: 54px;
 	height: 21px;
 	line-height: 20px;
+	background:#fff;
+	border-radius:2px;
 }
 #timeline .post.left .date{
-	background: transparent url(../img/tab-left.png) no-repeat right;
 	right: -54px;
 }
 #timeline .post.right .date{
-	background: transparent url(../img/tab-right.png) no-repeat left;
 	left: -54px;
 }
 #timeline .year-marker {
@@ -279,17 +277,17 @@ body{
 	width: 76px;
 	height: 26px;
 	padding: 2px;
-	background-color: #FFF;
+	background:#ccc;
 }
 #timeline .year-marker .inner2{
-	background-color: #434a50;
+	background-color: #ccc;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
 #timeline .year{
 	text-align: center;
-	color: #fff;
+	color: #000;
 	font-size: 14px;
 	font-weight: bold;
 	height: 26px;
@@ -359,7 +357,7 @@ body{
 }
 .isotope #line{
 	margin: 0 auto;
-	background-color: #b3b6b8;
+	background-color: #ccc;
 	display: block;
 	float: left;
 	height: 100%;
