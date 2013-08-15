@@ -89,41 +89,6 @@ $(function() {
 			});
 		});
 
-		// load scripts after all the html has been set
-		$.getScript('//static.ak.fbcdn.net/connect.php/js/FB.Share');
-		$.getScript('//platform.twitter.com/widgets.js');
-
-		$('#timeline .post .share').hover(
-			function(){
-				$(this).find('.share-trigger').addClass('over');
-				$(this).find('.share-popup').show();
-			},
-			function(){
-				$(this).find('.share-trigger').removeClass('over');
-				$(this).find('.share-popup').hide();
-			}
-		);
-
-		$('#buttons a.expand-all').click(function(e){
-			$('.post .body').slideDown(function(){
-				$('#timeline').isotope('reLayout');
-			});
-			$('.post').removeClass('closed');
-			$('#expand-collapse-buttons a').removeClass('active');
-			$(this).addClass('active');
-			e.preventDefault();
-		});
-
-		$('#buttons a.collapse-all').click(function(e){
-			$('.post .body').slideUp(function(){
-				$('#timeline').isotope('reLayout');
-			});
-			$('.post').addClass('closed');
-			$('#expand-collapse-buttons a').removeClass('active');
-			$(this).addClass('active');
-			e.preventDefault();
-		});
-
 	}
 
 	/*
